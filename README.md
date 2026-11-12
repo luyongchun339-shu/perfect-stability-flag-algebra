@@ -3,7 +3,7 @@
 This repository contains the code and flag algebra certificate accompanying the study of inducibility and perfect stability for complete partite graphs. In particular, it certifies the inducibility of
 
 $$
-F_{*}=K_{4,2,1^9}, \qquad \lambda_{F_*,\max}=\frac{118216098}{1220703125}.
+F_{*}=K_{4,2,1^9}, \qquad \lambda_{F_{*},\max}=\frac{118216098}{1220703125}.
 $$
 
 The calculation uses four cluster-graph types and 176 partitions of 15. The resulting certificate is checked using exact integer and rational arithmetic.
