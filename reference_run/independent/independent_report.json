@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "model_sha256_uncompressed": "80bd7aa08f8ad3ce12b4dc0c4b7a7d88273cfee22b623e58e04141d8d82eebfe",
+  "bound": "118216098/1220703125",
+  "identities_checked": 176,
+  "zero_residuals": 87,
+  "positive_residuals": 89,
+  "negative_residuals": 0,
+  "arithmetic": "Exact integers and fractions.Fraction only",
+  "counting_algorithm": "Independent component-by-component root/left/right DP",
+  "certificate_sha256": "08ae6232e707d332cf804c13727a5ad6fcf5b3e8dc016a4dfe4a8c8ca92fd560",
+  "elapsed_seconds": 2.754
+}

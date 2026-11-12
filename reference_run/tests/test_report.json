@@ -1,0 +1,1 @@
+{"brute_labelled_host_cases":88,"corrupt_certificates_rejected":["wrong_bound","indefinite_factor","forged_residual","permuted_flags_without_matrices","zero_denominator","floating_point_certificate_entry"],"elapsed_seconds":1.0133575410000049,"factor_two_regression":"PASS","status":"TESTS_PASSED"}

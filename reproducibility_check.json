@@ -1,0 +1,11 @@
+{
+  "status": "TWO_FRESH_RUNS_EXACTLY_VERIFIED",
+  "same_source_sha256": true,
+  "certificate_bytes_identical": true,
+  "certificate_sha256": "08ae6232e707d332cf804c13727a5ad6fcf5b3e8dc016a4dfe4a8c8ca92fd560",
+  "all_704_matrices_equal_in_both_runs": true,
+  "every_step_exit_status_zero": true,
+  "positive_residuals_all_greater_than_1_over_500": true,
+  "minimum_positive_residual_exact": "193774260240270644193383453903797734146537945984267/95140796316602260582138409003947572000000000000000000",
+  "note": "Two runs of the sharp-only search began with empty output directories; the exact certificate is stored once in reference_run."
+}

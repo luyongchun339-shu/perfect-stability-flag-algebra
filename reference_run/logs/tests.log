@@ -1,0 +1,5 @@
+MODEL type=(1,) flags=45 matrices=176 denominator=51480
+MODEL type=(3,) flags=30 matrices=176 denominator=2522520
+MODEL type=(2, 1) flags=75 matrices=176 denominator=2522520
+MODEL type=(1, 1, 1) flags=171 matrices=176 denominator=2522520
+TESTS_PASSED 88 brute cases; 6 corrupt certificates rejected

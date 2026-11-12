@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETE_EXACT_VERIFIED",
+  "old_certificate_read": false,
+  "process": "empty-directory fresh search; exact recovery; two exact verifiers",
+  "steps": [
+    {
+      "step": "model",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/flag_model.py",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/model.json.gz"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.3601227279996237,
+      "log": "model.log"
+    },
+    {
+      "step": "search_sharp",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/search_sdp.py",
+        "--model",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/model.json.gz",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out",
+        "--mode",
+        "sharp"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 12.356907613000203,
+      "log": "search_sharp.log"
+    },
+    {
+      "step": "recover",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/recover_certificate.py",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 3.4574547480001456,
+      "log": "recover.log"
+    },
+    {
+      "step": "verify",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/verify_certificate.py",
+        "--certificate",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/sharp_certificate.json.gz",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/verified"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.6840962400001445,
+      "log": "verify.log"
+    },
+    {
+      "step": "verify_independent",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/verify_independent.py",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/sharp_certificate.json.gz",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/independent"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 3.561200125999676,
+      "log": "verify_independent.log"
+    },
+    {
+      "step": "local",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/check_local.py",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/local"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.3033809829998972,
+      "log": "local.log"
+    },
+    {
+      "step": "tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/regression_tests.py",
+        "--certificate",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/sharp_certificate.json.gz",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/tests"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.7270437339998352,
+      "log": "tests.log"
+    },
+    {
+      "step": "verify_python_O",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/flag_sharp_only_work/flag_sdp_reproducible/verify_certificate.py",
+        "--certificate",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/sharp_certificate.json.gz",
+        "--out",
+        "/mnt/data/flag_sharp_only_work/new_ref_out/verified_python_O"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 3.367179657000179,
+      "log": "verify_python_O.log"
+    }
+  ],
+  "source_sha256": {
+    "check_local.py": "6ba20c5f80be326b195ae9ed2b1f828d1f997d92a332a81c45ae9d9eb7172e67",
+    "face.py": "fc1f2a39685bdc5df541c81b0a9aa4bdec02752638cbfd16bb18f17c7dc572e1",
+    "flag_model.py": "526508eb4fa26ac0888bc305e55b74a27a2da48b1301bd22dfa442f5f199b27d",
+    "recover_certificate.py": "dd7288293385da78d11a5791fa6dbccf11bce7c34b8277fbd12a4666733f5c65",
+    "regression_tests.py": "b9de14185658ce3f54b2c61a732623b36aac868c525726ae5befdd059010b247",
+    "run_all.py": "a6f292faa81250aeddda2ccb62e37c094b0ddaa01a5c4f73106d42644405deb2",
+    "sdp_core.py": "e8b920e69bc7af89857e077f286eb53db1d053c83eb068dfd4d64f6e87f50edb",
+    "search_sdp.py": "d17b4b1a1739842d7cddd3c0902fc242205eea69123b399e5a2c1dd63b5494c5",
+    "verify_certificate.py": "fd27c30110dd51f0fd7b0daa7ee924a655f32de299f55329e043197afbb81d40",
+    "verify_independent.py": "2be50a06b1ef2bb38c39660e5e5245efcaee6746c457f7bf0a1d9102e21f613a"
+  },
+  "all_704_count_matrices_identical": true,
+  "bound": "118216098/1220703125",
+  "zero_residuals": 87,
+  "positive_residuals": 89,
+  "certificate_sha256": "08ae6232e707d332cf804c13727a5ad6fcf5b3e8dc016a4dfe4a8c8ca92fd560",
+  "elapsed_seconds": 28.869654838000315,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

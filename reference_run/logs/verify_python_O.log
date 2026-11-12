@@ -1,0 +1,10 @@
+MODEL type=(1,) flags=45 matrices=176 denominator=51480
+MODEL type=(3,) flags=30 matrices=176 denominator=2522520
+MODEL type=(2, 1) flags=75 matrices=176 denominator=2522520
+MODEL type=(1, 1, 1) flags=171 matrices=176 denominator=2522520
+PSD_EXACT_PASS [1] dimension 45 factor 43
+PSD_EXACT_PASS [3] dimension 30 factor 29
+PSD_EXACT_PASS [2, 1] dimension 75 factor 71
+PSD_EXACT_PASS [1, 1, 1] dimension 171 factor 164
+GLOBAL_EXACT_VERIFICATION VERIFIED
+BOUND 118216098/1220703125 RESIDUALS 87 89 0
