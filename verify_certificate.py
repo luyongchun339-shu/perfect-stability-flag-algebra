@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 """Exact certificate verification, Python standard library only.
-
-Rebuilds the joint flag counts. Does not load a numerical SDP solution, use a
-numerical eigensolver, import the recovery script, or trust saved matrix counts.
-Every accepted condition is checked with integers and fractions.Fraction.
 """
 from __future__ import annotations
 import argparse, csv, hashlib, json, sys, time
