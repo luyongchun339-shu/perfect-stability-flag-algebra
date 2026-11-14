@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 """Fresh SDP search by a log-determinant path-following method.
-
-This file implements the numerical solver, rather than pretending to call an
-unavailable solver. Only NumPy/SciPy linear algebra is used. No certificate,
-stored solution, or previous run is read. A numerical success is NOT a proof.
-Run recover_certificate.py and both exact verifiers afterwards.
-
-Fix t=M and search for a positive margin on the analytically derived face.
 """
 from __future__ import annotations
 import os
