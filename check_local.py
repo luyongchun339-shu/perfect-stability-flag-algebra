@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""Exact local counting checks, using only the Python standard library.
-
-Checks the candidate density, pair cancellation, all occupancy patterns,
-polynomial coefficients and finite examples. The edit-distance lower bound
-is a mathematical argument in MATHEMATICS.md, not a claim of this script.
-"""
 from __future__ import annotations
 from fractions import Fraction as F
 from itertools import combinations
