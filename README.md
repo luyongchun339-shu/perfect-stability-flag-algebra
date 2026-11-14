@@ -19,7 +19,6 @@ The calculation uses four cluster-graph types and 176 partitions of 15. The resu
 | `recover_certificate.py` | Converts the numerical solution into a rational certificate. |
 | `verify_certificate.py` | Recomputes and verifies the certificate using exact arithmetic. |
 | `verify_independent.py` | Independently recomputes the flag products and verifies the certificate. |
-| `check_local.py` | Checks the perturbation and finite-construction calculations. |
 | `regression_tests.py` | Runs small-case and corrupted-certificate tests. |
 | `run_all.py` | Runs the complete computation and verification pipeline. |
 | `reference_run/` | Contains a reference certificate, numerical outputs, logs, and verification reports. |
